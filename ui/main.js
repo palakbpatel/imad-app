@@ -15,12 +15,12 @@ var counter=0;
 button.onClick=function(){
     
     
-    //Makea request to counter endpoint
+    //Make a request to counter endpoint
     
     
     //Capture a resonse in varibale and store it
     request.onreadystatechange=function(){
-        if(request.readystate===XMLHttpRequest.DONE){
+        if(request.readyState===XMLHttpRequest.DONE){
            if(request.status===200) {
                var counter=request.responseText;
                 var span=document.getElementById('count');
